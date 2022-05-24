@@ -44,10 +44,11 @@ void print_statistics (unsigned char minimum, unsigned char maximum, float mean,
  * screen.
  * 
  * @param array The first element of the array to be printed on the screen
+ * @param counter The size of the array to be printed
  *
  * @return void
  */
-void print_array (unsigned char *array, unsigned int arr_size);
+void print_array (unsigned char *array, unsigned int counter);
 
 
 /**
@@ -57,11 +58,11 @@ void print_array (unsigned char *array, unsigned int arr_size);
  * its median.
  * 
  * @param array The first element of the array to be processed
- * @param 
+ * @param counter The size of the array to be printed
  *
  * @return median The median value of the given array.
  */
-unsigned char find_median (unsigned char *array, unsigned int arr_size);
+unsigned char find_median (unsigned char *array, unsigned int counter);
 
 /**
  * @brief Finds the mean of the given array
@@ -70,10 +71,11 @@ unsigned char find_median (unsigned char *array, unsigned int arr_size);
  * its mean.
  * 
  * @param array The first element of the array to be processed
+ * @param counter The size of the array to be printed
  *
  * @return mean The mean value of the given array.
  */
-float find_mean (unsigned char *array, unsigned int arr_size);
+float find_mean (unsigned char *array, unsigned int counter);
 
 /**
  * @brief Finds the maximum of the given array
@@ -82,10 +84,11 @@ float find_mean (unsigned char *array, unsigned int arr_size);
  * its maximum.
  * 
  * @param array The first element of the array to be processed
+ * @param counter The size of the array to be printed
  *
  * @return maximum The maximum value of the given array.
  */
-unsigned char find_maximum (unsigned char *array, unsigned int arr_size);
+unsigned char find_maximum (unsigned char *array, unsigned int counter);
 
 /**
  * @brief Finds the minimum of the given array
@@ -94,10 +97,11 @@ unsigned char find_maximum (unsigned char *array, unsigned int arr_size);
  * its minimum.
  * 
  * @param array The first element of the array to be processed
+ * @param counter The size of the array to be printed
  *
  * @return minimum The minimum value of the given array.
  */
-unsigned char find_minimum (unsigned char *array, unsigned int arr_size);
+unsigned char find_minimum (unsigned char *array, unsigned int counter);
 
 /**
  * @brief Sorts the given array from the largest to smallest
@@ -107,9 +111,10 @@ unsigned char find_minimum (unsigned char *array, unsigned int arr_size);
  * sorted array.
  * 
  * @param array The first element of the array to be processed
+ * @param counter The size of the array to be printed
  *
  * @return median The median value of the given array.
  */
-void sort_array (unsigned char *array, unsigned int arr_size);
+void sort_array (unsigned char *array, unsigned int counter);
 
 #endif /* __STATS_H__ */
